@@ -42,7 +42,7 @@ class Person(models.Model):
     optional_id = ULIDField()
 ```
 
-Adding a ULID field to your [Django REST Framework](https://www.django-rest-framework.org/) serializers is also straight forward.
+Adding a ULID field to your [Django REST Framework](https://www.django-rest-framework.org/) serializers is also straightforward.
 
 Simply importing the `django_ulid.serializers` module will automatically register the `ULIDField` serializer by overriding
 the [serializer_field_mapping](https://www.django-rest-framework.org/api-guide/serializers/#customizing-field-mappings) on the default [ModelSerializer](https://www.django-rest-framework.org/api-guide/serializers/#modelserializer).

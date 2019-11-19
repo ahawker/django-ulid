@@ -56,7 +56,7 @@ free to omit it.
 
 Adding a ULID field to your `Django REST
 Framework <https://www.django-rest-framework.org/>`__ serializers is
-also straight forward.
+also straightforward.
 
 Simply importing the ``django_ulid.serializers`` module will
 automatically register the ``ULIDField`` serializer by overriding the

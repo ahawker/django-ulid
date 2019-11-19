@@ -1,0 +1,5 @@
+# django-uild/requirements/build.txt
+#
+# Requirements necessary to build this package.
+
+setuptools==41.4.0

@@ -1,4 +1,4 @@
-# requirements/tox.txt
+# django-ulid/requirements/tox.txt
 #
 # Requirements for executing test suite using tox.
 

@@ -1,8 +1,8 @@
-# requirements/docs.txt
+# django-ulid/requirements/docs.txt
 #
 # Requirements for generating package documentation.
 
--r common.txt
+-r base.txt
 
-mkdocs==1.0.4
-mkdocs-material==4.5.0
+sphinx==2.2.0
+sphinx_rtd_theme==0.4.3

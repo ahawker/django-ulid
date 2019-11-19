@@ -1,0 +1,9 @@
+# django-ulid/requirements/base.txt
+#
+# Requirements for using this package.
+
+-r build.txt
+
+typing==3.7.4.1; python_version < '3.6'
+
+ulid-py>=0.0.9

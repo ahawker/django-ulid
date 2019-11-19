@@ -1,8 +1,8 @@
-# requirements/test.txt
+# django-ulid/requirements/test.txt
 #
 # Requirements for executing test suite.
 
--r local.txt
+-r dev.txt
 
 coverage==4.5.4
 factory-boy==2.12.0

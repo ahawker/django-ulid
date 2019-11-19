@@ -1,0 +1,8 @@
+# requirements/docs.txt
+#
+# Requirements for generating package documentation.
+
+-r common.txt
+
+mkdocs==1.0.4
+mkdocs-material==4.5.0

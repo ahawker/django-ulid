@@ -1,0 +1,5 @@
+# requirements/base.txt
+#
+# Requirements necessary simply using this package.
+
+ulid-py>=0.0.9

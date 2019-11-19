@@ -1,0 +1,14 @@
+# requirements/dev.txt
+#
+# Requirements for developers working on this package.
+
+-r common.txt
+
+bandit==1.6.2
+bumpversion==0.5.3
+flake8==3.7.9
+isort==4.3.21
+mypy==0.740
+pycodestyle==2.5.0
+pylint==2.4.4
+safety==1.8.5

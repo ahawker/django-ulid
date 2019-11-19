@@ -1,0 +1,56 @@
+sudo: false
+language: python
+cache: pip
+matrix:
+  allow_failures:
+  - env: TOXENV=py36-djmaster
+  - env: TOXENV=py37-djmaster
+  - env: TOXENV=py38-djmaster
+  include:
+  - python: '3.6'
+    env: TOXENV=lint
+  - python: '3.6'
+    env: TOXENV=scan
+  - python: '3.5'
+    env: TOXENV=py35-dj21
+  - python: '3.6'
+    env: TOXENV=py36-dj21
+  - python: '3.7'
+    env: TOXENV=py37-dj21
+  - python: '3.5'
+    env: TOXENV=py35-dj22
+  - python: '3.6'
+    env: TOXENV=py36-dj22
+  - python: '3.7'
+    env: TOXENV=py37-dj22
+  - python: '3.6'
+    env: TOXENV=py36-dj30
+  - python: '3.7'
+    env: TOXENV=py37-dj30
+  - python: '3.8-dev'
+    env: TOXENV=py38-dj30
+  - python: '3.6'
+    env: TOXENV=py36-djmaster
+  - python: '3.7'
+    env: TOXENV=py37-djmaster
+  - python: '3.8-dev'
+    env: TOXENV=py38-djmaster
+install: make travis-install
+before_script: make travis-before-script
+script: make travis-script
+after_success: make travis-after-success
+deploy:
+- provider: pypi
+  server: https://upload.pypi.org/legacy/
+  user: Andrew.Hawker
+  password:
+    secure: DiAGaB9U0B9LeQodJMBwkozE5QlTUqzAIxpANl1n6NyxpAnwVmWKjpReEGLmmjCFy4e0XJnGEd/IfL8fum0HjcQN3gnzKOinNRNrP31LCpK7nsP/5YjsHc23h5RtyjX35al+NUrkegXh2hpyWiSwzrfyp8BtEc1N3O99XcIk+bJGYhqpxOSgWW7pGb86vQSi4z1OU1n5Wzp0hG0e5eia0bmROwW2jEapgmkG5cHvKU+Y45b3oFklQXv3gjYN2Ti1zSkGMgG3Jyjkb6fpkgWVTIU+WYX37ROZbH85hW5DcYxuj/gR/Ys60uzpTCeGXMsDx5ylQ+6Lfntlis+iNaG22NeoasP6K0oQC+/jnQhCx+NVMnxko3kaelDFVX2SNdhXA+VpnwMYZQ+yt9WJgDJa/3hh0+ztgPwOLmxqIp2QL1vTOBTjMkqqOZ3HPx+NSXe1XSQv6YGjUclNXXyntXyLB01YsPgoXbTUnyXJbSjDN/ov7LmSfrzMP5JvJ2x8MgiOrZMrLYFM/xsF+AutLhUtFWH+MW3U0R5L2VRVqF2FTqlA1tbjrqtSYFQOhJMaIqNfjxlzJhd+qO2G/lG9d0UygHexGjwLODVNqi5m4bwjUS/33WH3CcAYkmqFzYccKJD0/F0lQTOExipqe6tfik9wzGVWDYBs+mDGZA+sxzOHNE4=
+  distributions: sdist bdist_wheel
+  skip_cleanup: true
+  on:
+    branch: master
+    tags: true
+    condition: $TRAVIS_PYTHON_VERSION = "3.6"
+env:
+  global:
+  - VIRTUALENV_NO_DOWNLOAD=1

@@ -63,7 +63,7 @@ seclint:  ## Run bandit on the package.
 	@bandit -v -r django_ulid
 
 .PHONY: lint
-lint:  mypy seclint isort  ## Run mypy, seclint, and isort on the package.
+lint: seclint isort  ## Run mypy, seclint, and isort on the package.
 
 .PHONY: bump-patch
 bump-patch:  ## Bump package patch version, e.g. 0.0.1 -> 0.0.2.

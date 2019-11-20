@@ -58,16 +58,12 @@ isort:  ## Run isort on the package.
 mypy:  ## Run mypy static analysis checks on the package.
 	@mypy django_ulid
 
-.PHONY: pylint
-pylint:  ## Run pylint on the package.
-	@pylint --rcfile .pylintrc django_ulid
-
 .PHONY: seclint
 seclint:  ## Run bandit on the package.
 	@bandit -v -r django_ulid
 
 .PHONY: lint
-lint:  pylint mypy seclint isort  ## Run mypy and pylint on the package.
+lint:  mypy seclint isort  ## Run mypy, seclint, and isort on the package.
 
 .PHONY: bump-patch
 bump-patch:  ## Bump package patch version, e.g. 0.0.1 -> 0.0.2.

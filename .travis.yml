@@ -54,7 +54,7 @@ deploy:
   on:
     branch: master
     tags: true
-    condition: $TRAVIS_PYTHON_VERSION = "3.6"
+    condition: $TOXENV = "py37-dj30"
 env:
   global:
   - VIRTUALENV_NO_DOWNLOAD=1

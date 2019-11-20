@@ -31,7 +31,6 @@ class ULIDField(models.Field):
     def deconstruct(self):
         name, path, args, kwargs = super().deconstruct()
         del kwargs['max_length']
-        del kwargs['default']
         return name, path, args, kwargs
 
     def get_internal_type(self):

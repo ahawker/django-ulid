@@ -3,6 +3,8 @@ django-ulid
 
 |Build Status| |codecov| |Code Climate| |Issue Count|
 
+|PyPI Version| |PyPI Versions|
+
 `Universally Unique Lexicographically Sortable Identifier
 (ULID) <https://github.com/alizain/ulid>`__ support in
 `Django <https://www.djangoproject.com/>`__.
@@ -117,3 +119,7 @@ Dependencies
    :target: https://codeclimate.com/github/ahawker/django-ulid
 .. |Issue Count| image:: https://codeclimate.com/github/ahawker/django-ulid/badges/issue_count.svg
    :target: https://codeclimate.com/github/ahawker/django-ulid
+.. |PyPI Version| image:: https://badge.fury.io/py/django-ulid.svg
+   :target: https://badge.fury.io/py/django-ulid
+.. |PyPI Versions| image:: https://img.shields.io/pypi/pyversions/django-ulid.svg
+   :target: https://pypi.python.org/pypi/django-ulid

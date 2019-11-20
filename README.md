@@ -5,6 +5,9 @@
 [![Code Climate](https://codeclimate.com/github/ahawker/django-ulid/badges/gpa.svg)](https://codeclimate.com/github/ahawker/django-ulid)
 [![Issue Count](https://codeclimate.com/github/ahawker/django-ulid/badges/issue_count.svg)](https://codeclimate.com/github/ahawker/django-ulid)
 
+[![PyPI Version](https://badge.fury.io/py/django-ulid.svg)](https://badge.fury.io/py/django-ulid)
+[![PyPI Versions](https://img.shields.io/pypi/pyversions/django-ulid.svg)](https://pypi.python.org/pypi/django-ulid)
+
 [Universally Unique Lexicographically Sortable Identifier (ULID)](https://github.com/alizain/ulid) support in [Django](https://www.djangoproject.com/).
 
 ### Status

@@ -1,7 +1,7 @@
 django-ulid
 ===========
 
-|Build Status|
+|Build Status| |codecov|
 
 `Universally Unique Lexicographically Sortable Identifier
 (ULID) <https://github.com/alizain/ulid>`__ support in
@@ -111,3 +111,5 @@ Dependencies
 
 .. |Build Status| image:: https://travis-ci.org/ahawker/django-ulid.svg?branch=master
    :target: https://travis-ci.org/ahawker/django-ulid
+.. |codecov| image:: https://codecov.io/gh/ahawker/django-ulid/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/ahawker/django-ulid

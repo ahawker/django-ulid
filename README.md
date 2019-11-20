@@ -1,6 +1,7 @@
 # django-ulid
 
 [![Build Status](https://travis-ci.org/ahawker/django-ulid.svg?branch=master)](https://travis-ci.org/ahawker/django-ulid)
+[![codecov](https://codecov.io/gh/ahawker/django-ulid/branch/master/graph/badge.svg)](https://codecov.io/gh/ahawker/django-ulid)
 
 [Universally Unique Lexicographically Sortable Identifier (ULID)](https://github.com/alizain/ulid) support in [Django](https://www.djangoproject.com/).
 

@@ -41,7 +41,7 @@ setup(
     long_description=get_long_description(),
     packages=['django_ulid'],
     python_requires='>=3.5',
-    install_requires=['Django>=2.1', 'ulid-py>=0.0.9'],
+    install_requires=['Django>=2.1', 'ulid-py>=0.1.0'],
     classifiers=(
         'Development Status :: 4 - Beta',
         "Framework :: Django",

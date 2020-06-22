@@ -2,4 +2,4 @@
 #
 # Requirements necessary to build this package.
 
-setuptools==41.4.0
+setuptools==47.3.1

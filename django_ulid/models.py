@@ -5,7 +5,6 @@
     Contains functionality for Django model support.
 """
 import ulid
-
 from django.core import exceptions
 from django.db import models
 from django.utils.translation import gettext as _

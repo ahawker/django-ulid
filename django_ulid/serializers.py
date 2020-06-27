@@ -5,9 +5,8 @@
     Contains functionality for Django REST Framework (DRF) serializer support.
 """
 import ulid
-from rest_framework import fields, serializers
-
 from django.utils.translation import gettext as _
+from rest_framework import fields, serializers
 
 from . import models
 

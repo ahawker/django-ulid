@@ -4,7 +4,7 @@
 
 -r base.txt
 
-bumpversion==0.5.3
+bumpversion==0.6.0
 mypy==0.670; python_version <= '3.4'  # pyup: ignore
 mypy==0.740; python_version > '3.4'
 safety==1.8.7

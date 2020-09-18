@@ -4,7 +4,7 @@
 
 -r dev.txt
 
-djangorestframework==3.11.0
+djangorestframework==3.11.1
 
 coverage==5.3
 factory-boy==2.12.0

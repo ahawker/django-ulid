@@ -6,4 +6,4 @@
 
 typing==3.7.4.1; python_version < '3.6'
 
-ulid-py==0.1.0
+ulid-py==1.1.0

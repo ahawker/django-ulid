@@ -2,4 +2,4 @@
 #
 # Requirements necessary to build this package.
 
-setuptools==51.0.0
+setuptools==51.1.0.post20201221

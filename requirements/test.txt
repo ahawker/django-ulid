@@ -6,7 +6,7 @@
 
 djangorestframework==3.12.2
 
-coverage==5.3
+coverage==5.3.1
 factory-boy==3.1.0
 
 pytest==6.2.0

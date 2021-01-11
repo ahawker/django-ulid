@@ -7,7 +7,7 @@
 bumpversion==0.6.0
 mypy==0.670; python_version <= '3.4'  # pyup: ignore
 mypy==0.790; python_version > '3.4'
-safety==1.10.0
+safety==1.10.2
 bandit==1.7.0
 isort==4.2.15; (python_version > '3.0' and python_version < '3.4')  # pyup: ignore
 isort==4.3.21; (python_version > '2.7' and python_version < '3.0') or python_version >= '3.4'

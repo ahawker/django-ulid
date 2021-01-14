@@ -92,6 +92,23 @@ to automatically serialize the instance through the foreign key.
    class OrganizationSerializer(serializers.ModelSerializer):
        owner = PersonPrimaryKeyRelatedField()
 
+You can use the type ``ulid`` as a path segment converter in your URLs,
+similar to the built-in ``uuid`` converter. It returns a ``ULID``
+instance.
+
+.. code:: python
+
+   import ulid
+   from django.urls import path
+   from django_ulid import path_converter 
+
+   def person_view(request, id):
+       assert isinstance(id, ulid.ULID)
+
+   urlpatterns = [
+       path('person/<ulid:id>/', person_view)
+   ]
+
 Contributing
 ~~~~~~~~~~~~
 

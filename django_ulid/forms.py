@@ -15,7 +15,7 @@ class ULIDField(forms.CharField):
     Django form field type for handling ULID values.
     """
     def prepare_value(self, value):
-        return str(ulid.parse(value))
+        return str(ulid.parse(value)) if value is not None else ""
 
     def to_python(self, value):
         value = super().to_python(value)

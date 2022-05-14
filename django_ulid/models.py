@@ -6,7 +6,7 @@
 """
 import ulid
 from django.core import exceptions
-from django.db import models
+from django.db import models, connection as db_conn
 from django.utils.translation import gettext as _
 
 from . import forms
@@ -34,7 +34,7 @@ class ULIDField(models.Field):
         return name, path, args, kwargs
 
     def get_internal_type(self):
-        return 'UUIDField'
+        return 'UUIDField' if db_conn.features.has_native_uuid_field else 'CharField'
 
     def get_db_prep_value(self, value, connection, prepared=False):
         if value is None:

@@ -11,8 +11,9 @@ from django.utils.translation import gettext as _
 
 from . import forms
 
-# Helper attr so callers don't need to import the ulid package.
-default = ulid.new
+# Helper function so callers don't need to import the ulid package.
+def default():
+    return ulid.new()
 
 
 class ULIDField(models.Field):

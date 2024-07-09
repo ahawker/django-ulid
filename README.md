@@ -33,10 +33,10 @@ Adding a ULID field to your Django models is straightforward. It can be a normal
 
 ```python
 from django.db import models
-from django_ulid.models import default, ULIDField
+from django_ulid.models import default_ulid, ULIDField
 
 class Person(models.Model):
-    id = ULIDField(default=default, primary_key=True, editable=False)
+    id = ULIDField(primary_key=True, default=default_ulid, editable=False)
 ```
 
 Passing in `default` to the `ULIDField` will automatically create a default value using the [ulid.new](https://ulid.readthedocs.io/en/latest/api.html#ulid.api.new) function.
